@@ -59,11 +59,12 @@ body {
         list-style: none;
 }
 .calculator-container li {
+    text-align: end;
     font-size: 15px;
     font-weight: bold;
     border: solid 1px white;
-    color: black;
-    background-color: gray;
+    color: white;
+    background-color: rgb(131, 153, 160);
 }
 .calculator-container li button {
     width: 100%;
@@ -71,15 +72,13 @@ body {
     border: none;
     background-color: #eef0f1;
 }
+.calculator-container li button:hover {
+    background-color:#cecfcf;
+    cursor: pointer;
+}
 li.result-block {
-    font-size: 25px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.701);
-    text-align: end;
-    padding-top: 30px;
     grid-area: result-block;
 }
-
 .square-root-block {
     grid-area: square-root-block;
 }
