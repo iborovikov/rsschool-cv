@@ -1,0 +1,160 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.main-container {
+    width: 100%;
+    height: 2000px;
+    text-align: center;
+    padding-top: 100px;
+    background: linear-gradient(to right, #64bfe6, #91e595);
+}
+.calculator-container {
+    display: grid;
+    width: 200px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 1px 1px;
+    background-color: white;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "result-block result-block result-block result-block"
+        "square-root-block square-root-block exponentation-block exponentation-block"
+        "ac-block ac-block del-block division-block"
+        "number-block-1 number-block-2 number-block-3 multiplication-block"
+        "number-block-4 number-block-5 number-block-6 addition-block"
+        "number-block-7 number-block-8 number-block-9 subtraction-block"
+        "point-block number-block-0 equal-block equal-block";
+        list-style: none;
+}
+.calculator-container li {
+    text-align: end;
+    font-size: 15px;
+    font-weight: bold;
+    border: solid 1px white;
+    color: white;
+    background-color: rgb(131, 153, 160);
+}
+.calculator-container li button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #eef0f1;
+}
+.calculator-container li button:hover {
+    background-color:#cecfcf;
+    cursor: pointer;
+}
+li.result-block {
+    grid-area: result-block;
+}
+.square-root-block {
+    grid-area: square-root-block;
+}
+
+.exponentation-block {
+    grid-area: exponentation-block;
+}
+
+.ac-block {
+    grid-area: ac-block;
+}
+
+.del-block {
+    grid-area: del-block;
+}
+
+.division-block {
+    grid-area: division-block;
+}
+
+.number-block-1 {
+    grid-area: number-block-1;
+}
+
+.number-block-2 {
+    grid-area: number-block-2;
+}
+
+.number-block-3 {
+    grid-area: number-block-3;
+}
+
+.number-block-4 {
+    grid-area: number-block-4;
+}
+
+.number-block-5 {
+    grid-area: number-block-5;
+}
+
+.number-block-6 {
+    grid-area: number-block-6;
+}
+
+.number-block-7 {
+    grid-area: number-block-7;
+}
+
+.number-block-8 {
+    grid-area: number-block-8;
+}
+
+.number-block-9 {
+    grid-area: number-block-9;
+}
+
+.number-block-0 {
+    grid-area: number-block-0;
+}
+
+.point-block {
+    grid-area: point-block;
+}
+
+.equal-block {
+    grid-area: equal-block;
+}
+
+.multiplication-block {
+    grid-area: multiplication-block;
+}
+
+.addition-block {
+    grid-area: addition-block;
+}
+
+.subtraction-block {
+    grid-area: subtraction-block;
+}
